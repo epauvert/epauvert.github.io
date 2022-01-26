@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+
+:root {
+    --cyan: #4BC6B9
+}
+
+body {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+}
+
+header {
+    background: linear-gradient(#0b1c1f, #0a3a42, #08917a);
+}
+
+header nav {
+    padding: 30px 5% 0 5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header nav .right {
+    display:flex;
+    align-items: center;
+}
+header nav .right p {
+    margin: 0 15px 0 0;
+}
+header nav .right p:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+header nav .right button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--cyan);
+    color: rgb(233, 233, 233);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s, background-color 0.4s;
+}
+header nav .right button:hover {
+    color: inherit;
+    background-color: var(--cyan);
+}
+titre {
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+}
+
+
+.création {
+    padding: 30px 5%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.création .product-création {
+    width: 100%;
+    flex-shrink: 3;
+}
+.création .product-création h1 {
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
+}
+.création .product-création p {
+    font-weight: 400;
+}
+.création .image-création img {
+    width: 110%;
+}
+
+.first .product-création .small-images {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.first .product-création .small-images .small {
+    padding: 20px;
+    background-color: rgba(1, 5, 5, 0);
+    margin: 0 15px 15px 0;
+    border-radius: 20px;
+    transition: filter 0.5s;
+}
+.first .product-création .small-images .small:hover {
+    filter: brightness(60%);
+}
+
+.first .product-création .small-images .small img {
+    width: 120px;
+}
+
+.second {
+    margin: 0;
+    background-color: #0a3a42;
+}
+
+@media screen and (max-width: 630px) {
+    header nav .right {
+        display: none;
+    }
+    .création .product-création h1 {
+        font-size: 2em;
+    }
+    .création .image-création {
+        display: none;
+    }
+
+    .first .product-création .small-images .small img {
+        width: 90px;
+    }
+}
